@@ -1,0 +1,1406 @@
+<report xmlns="http://developer.cognos.com/schemas/report/15.5/" expressionLocale="en-us" useStyleVersion="11.6" viewPagesAsTabs="topLeft">
+				
+				<drillBehavior/>
+				<layouts>
+					<layout>
+						<reportPages>
+							<page name="BankLoad">
+			<pageBody>
+				<contents><block>
+			<contents>
+			<list horizontalPagination="true" name="List1" refQuery="Summary Banked Load">
+			
+			
+			
+			<noDataHandler>
+				<contents>
+					<block>
+						<contents>
+							<textItem>
+								<dataSource>
+									<staticValue>No Data Available</staticValue>
+								</dataSource>
+							</textItem>
+						</contents>
+						<style>
+							<CSS value="padding:16px;"/>
+						</style>
+					</block>
+				</contents>
+			</noDataHandler>
+			<style>
+				<CSS value="border-collapse:collapse;empty-cells:show;border:1pt groove black"/>
+				<defaultStyles>
+					<defaultStyle refStyle="ls"/>
+				</defaultStyles>
+			</style>
+		<listColumns>
+		<listColumn>
+		<listColumnTitle>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lt"/>
+		</defaultStyles>
+		<CSS value="background-color:#175d8d;color:white;background-image:none;border:1pt solid #dadada"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemLabel refDataItem="COLLEGE"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnTitle>
+		<listColumnBody>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lm"/>
+		</defaultStyles>
+		<CSS value="border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;background-color:white;color:black;background-image:none"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemValue refDataItem="COLLEGE"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnBody>
+		</listColumn>
+		<listColumn>
+		<listColumnTitle>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lt"/>
+		</defaultStyles>
+		<CSS value="background-color:#175d8d;color:white;background-image:none;border:1pt solid #dadada"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemLabel refDataItem="COUNT_INSTRUCT"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnTitle>
+		<listColumnBody>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lm"/>
+		</defaultStyles>
+		<dataFormat>
+		<numberFormat/>
+		</dataFormat>
+		<CSS value="border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;background-color:white;color:black;background-image:none"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemValue refDataItem="COUNT_INSTRUCT"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnBody>
+		</listColumn>
+		<listColumn>
+		<listColumnTitle>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lt"/>
+		</defaultStyles>
+		<CSS value="background-color:#175d8d;color:white;background-image:none;border:1pt solid #dadada"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemLabel refDataItem="BANKED_LOAD"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnTitle>
+		<listColumnBody>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lm"/>
+		</defaultStyles>
+		<dataFormat>
+		<numberFormat decimalSize="2"/>
+		</dataFormat>
+		<CSS value="border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;background-color:white;color:black;background-image:none"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemValue refDataItem="BANKED_LOAD"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnBody>
+		</listColumn>
+		<listColumn>
+		<listColumnTitle>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lt"/>
+		</defaultStyles>
+		<CSS value="background-color:#175d8d;color:white;background-image:none;border:1pt solid #dadada"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemLabel refDataItem="USED_LOAD"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnTitle>
+		<listColumnBody>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lm"/>
+		</defaultStyles>
+		<dataFormat>
+		<numberFormat decimalSize="2"/>
+		</dataFormat>
+		<CSS value="border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;background-color:white;color:black;background-image:none"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemValue refDataItem="USED_LOAD"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnBody>
+		</listColumn>
+		<listColumn>
+		<listColumnTitle>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lt"/>
+		</defaultStyles>
+		<CSS value="background-color:#175d8d;color:white;background-image:none;border:1pt solid #dadada"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemLabel refDataItem="Balance"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnTitle>
+		<listColumnBody>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lm"/>
+		</defaultStyles>
+		<dataFormat>
+		<numberFormat decimalSize="2"/>
+		</dataFormat>
+		<CSS value="border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;background-color:white;color:black;background-image:none"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemValue refDataItem="Balance"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnBody>
+		</listColumn>
+		</listColumns>
+		</list>
+		</contents>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="GuidedLayoutMargin"/>
+		</defaultStyles>
+		<CSS value="text-align:center;margin-bottom:5px"/>
+		</style>
+		</block>
+		<block>
+			<contents>
+			<repeater name="Repeater2" refQuery="Query2">
+			<contents>
+			<table>
+			<style>
+			<defaultStyles>
+			<defaultStyle refStyle="tb"/>
+			</defaultStyles>
+			<CSS value="border-collapse:collapse;border-top-style:solid;border-bottom-style:double"/>
+			</style>
+			<tableRows>
+			<tableRow>
+			<tableCells>
+			<tableCell>
+			<contents>
+			<list horizontalPagination="true" name="List4" refQuery="Query2">
+			
+			
+			
+			<noDataHandler>
+				<contents>
+					<block>
+						<contents>
+							<textItem>
+								<dataSource>
+									<staticValue>No Data Available</staticValue>
+								</dataSource>
+							</textItem>
+						</contents>
+						<style>
+							<CSS value="padding:16px;"/>
+						</style>
+					</block>
+				</contents>
+			</noDataHandler>
+			<style>
+				<CSS value="border-collapse:collapse;empty-cells:show"/>
+				<defaultStyles>
+					<defaultStyle refStyle="ls"/>
+				</defaultStyles>
+			</style>
+		<masterDetailLinks>
+		<masterDetailLink>
+		<masterContext>
+		<dataItemContext refDataItem="PERSON_UID"/>
+		</masterContext>
+		<detailContext>
+		<dataItemContext refDataItem="PERSON_UID"/>
+		</detailContext>
+		</masterDetailLink>
+		<masterDetailLink>
+		<masterContext>
+		<dataItemContext refDataItem="College"/>
+		</masterContext>
+		<detailContext>
+		<dataItemContext refDataItem="College"/>
+		</detailContext>
+		</masterDetailLink>
+		</masterDetailLinks>
+		<listColumns>
+		<listColumn>
+		<listColumnTitle>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lt"/>
+		</defaultStyles>
+		<CSS value="background-color:#175d8d;color:white;background-image:none;border:1pt solid #dadada"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemLabel refDataItem="College"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnTitle>
+		<listColumnBody>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lm"/>
+		</defaultStyles>
+		<CSS value="border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;background-color:white;color:black;background-image:none;text-align:left"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemValue refDataItem="College"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnBody>
+		</listColumn>
+		<listColumn>
+		<listColumnTitle>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lt"/>
+		</defaultStyles>
+		<CSS value="background-color:#175d8d;color:white;background-image:none;border:1pt solid #dadada"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemLabel refDataItem="FULL_NAME_LFMI"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnTitle>
+		<listColumnBody>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lm"/>
+		</defaultStyles>
+		<CSS value="border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;background-color:white;color:black;background-image:none;text-align:left"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemValue refDataItem="FULL_NAME_LFMI"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnBody>
+		</listColumn>
+		<listColumn>
+		<listColumnTitle>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lt"/>
+		</defaultStyles>
+		<CSS value="background-color:#175d8d;color:white;background-image:none;border:1pt solid #dadada"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemLabel refDataItem="ID"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnTitle>
+		<listColumnBody>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lm"/>
+		</defaultStyles>
+		<CSS value="border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;background-color:white;color:black;background-image:none;text-align:left"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemValue refDataItem="ID"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnBody>
+		</listColumn>
+		<listColumn>
+		<listColumnTitle>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lt"/>
+		</defaultStyles>
+		<CSS value="background-color:#175d8d;color:white;background-image:none;border:1pt solid #dadada"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemLabel refDataItem="BANKED_LOAD"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnTitle>
+		<listColumnBody>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lm"/>
+		</defaultStyles>
+		<CSS value="border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;background-color:white;color:black;background-image:none;text-align:right"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemValue refDataItem="BANKED_LOAD"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnBody>
+		</listColumn>
+		<listColumn>
+		<listColumnTitle>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lt"/>
+		</defaultStyles>
+		<CSS value="background-color:#175d8d;color:white;background-image:none;border:1pt solid #dadada"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemLabel refDataItem="Load Used"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnTitle>
+		<listColumnBody>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lm"/>
+		</defaultStyles>
+		<CSS value="border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;background-color:white;color:black;background-image:none;text-align:right"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemValue refDataItem="Load Used"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnBody>
+		</listColumn>
+		<listColumn>
+		<listColumnTitle>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lt"/>
+		</defaultStyles>
+		<CSS value="background-color:#175d8d;color:white;background-image:none;border:1pt solid #dadada"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemLabel refDataItem="Balance"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnTitle>
+		<listColumnBody>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lm"/>
+		</defaultStyles>
+		<CSS value="border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;background-color:white;color:black;background-image:none;text-align:right"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemValue refDataItem="Balance"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnBody>
+		</listColumn>
+		</listColumns>
+		<sortList>
+		<sortItem refDataItem="FULL_NAME_LFMI"/>
+		</sortList>
+		</list>
+		</contents>
+		<style>
+		<CSS value="text-align:left;vertical-align:top;padding-top:3px;padding-bottom:2px;padding-left:5px"/>
+		<defaultStyles>
+		<defaultStyle refStyle="GuidedLayoutRightPadding"/>
+		</defaultStyles>
+		</style>
+		</tableCell>
+		<tableCell>
+		<contents>
+		<list horizontalPagination="true" name="List5" refQuery="Query1">
+			
+			
+			
+			<noDataHandler>
+				<contents>
+					<block>
+						<contents>
+							<textItem>
+								<dataSource>
+									<staticValue>No Data Available</staticValue>
+								</dataSource>
+							</textItem>
+						</contents>
+						<style>
+							<CSS value="padding:16px;"/>
+						</style>
+					</block>
+				</contents>
+			</noDataHandler>
+			<style>
+				<CSS value="border-collapse:collapse;empty-cells:show"/>
+				<defaultStyles>
+					<defaultStyle refStyle="ls"/>
+				</defaultStyles>
+			</style>
+		<masterDetailLinks>
+		<masterDetailLink>
+		<masterContext>
+		<dataItemContext refDataItem="College"/>
+		</masterContext>
+		<detailContext>
+		<dataItemContext refDataItem="COLLEGE"/>
+		</detailContext>
+		</masterDetailLink>
+		<masterDetailLink>
+		<masterContext>
+		<dataItemContext refDataItem="PERSON_UID"/>
+		</masterContext>
+		<detailContext>
+		<dataItemContext refDataItem="PERSON_UID"/>
+		</detailContext>
+		</masterDetailLink>
+		</masterDetailLinks>
+		<listColumns>
+		<listColumn>
+		<listColumnTitle>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lt"/>
+		</defaultStyles>
+		<CSS value="background-image:none;background-color:#175d8d;color:white;border:1pt solid #dadada"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemLabel refDataItem="TERM"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnTitle>
+		<listColumnBody>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lm"/>
+		</defaultStyles>
+		<CSS value="background-image:none;border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;background-color:white;color:black;text-align:left"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemValue refDataItem="TERM"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnBody>
+		</listColumn>
+		<listColumn>
+		<listColumnTitle>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lt"/>
+		</defaultStyles>
+		<CSS value="background-image:none;background-color:#175d8d;color:white;border:1pt solid #dadada"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemLabel refDataItem="BANKED_COMBINED"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnTitle>
+		<listColumnBody>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lm"/>
+		</defaultStyles>
+		<CSS value="background-image:none;border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;background-color:white;color:black"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemValue refDataItem="BANKED_COMBINED"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnBody>
+		</listColumn>
+		<listColumn>
+		<listColumnTitle>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lt"/>
+		</defaultStyles>
+		<CSS value="background-image:none;background-color:#175d8d;color:white;border:1pt solid #dadada"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemLabel refDataItem="Used"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnTitle>
+		<listColumnBody>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lm"/>
+		</defaultStyles>
+		<CSS value="background-image:none;border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;background-color:white;color:black"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemValue refDataItem="Used"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnBody>
+		</listColumn>
+		<listColumn>
+		<listColumnTitle>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lt"/>
+		</defaultStyles>
+		<CSS value="background-image:none;background-color:#175d8d;color:white;border:1pt solid #dadada"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemLabel refDataItem="HOME_IND"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnTitle>
+		<listColumnBody>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lm"/>
+		</defaultStyles>
+		<CSS value="background-image:none;border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;background-color:white;color:black;text-align:center"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemValue refDataItem="HOME_IND"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnBody>
+		</listColumn>
+		<listColumn>
+		<listColumnTitle>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lt"/>
+		</defaultStyles>
+		<CSS value="background-image:none;background-color:#175d8d;color:white;border:1pt solid #dadada"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemLabel refDataItem="PERC"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnTitle>
+		<listColumnBody>
+		<style>
+		<defaultStyles>
+		<defaultStyle refStyle="lm"/>
+		</defaultStyles>
+		<CSS value="background-image:none;border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;background-color:white;color:black"/>
+		</style>
+		<contents>
+		<textItem>
+		<dataSource>
+		<dataItemValue refDataItem="PERC"/>
+		</dataSource>
+		</textItem>
+		</contents>
+		</listColumnBody>
+		</listColumn>
+		</listColumns>
+		<sortList>
+		<sortItem refDataItem="TERM"/>
+		</sortList>
+		</list>
+		</contents>
+		<style>
+		<CSS value="padding:3px 5px 2px 2px;text-align:left;vertical-align:top"/>
+		<defaultStyles>
+		<defaultStyle refStyle="GuidedLayoutLeftPadding"/>
+		</defaultStyles>
+		</style>
+		</tableCell>
+		</tableCells>
+		</tableRow></tableRows></table></contents>
+		<sortList>
+		<sortItem refDataItem="College"/>
+		<sortItem refDataItem="FULL_NAME_LFMI"/>
+		</sortList>
+		</repeater>
+		</contents>
+		<style>
+		<CSS value="text-align:center"/>
+		</style>
+		</block>
+		</contents>
+				<style>
+					<defaultStyles>
+						<defaultStyle refStyle="pb"/>
+					</defaultStyles>
+				</style>
+			</pageBody>
+			<style>
+				<defaultStyles>
+					<defaultStyle refStyle="pg"/>
+				</defaultStyles>
+			</style>
+		<pageHeader><contents><block>
+			<contents><table><style><defaultStyles><defaultStyle refStyle="tb"/></defaultStyles><CSS value="border-collapse:collapse;width:100%"/></style><tableRows><tableRow><tableCells><tableCell><contents/></tableCell><tableCell><contents><textItem><dataSource><reportExpression>ReportName ()</reportExpression></dataSource></textItem></contents><style><defaultStyles><defaultStyle refStyle="ta"/></defaultStyles></style></tableCell><tableCell><contents/><style><defaultStyles><defaultStyle refStyle="ts"/></defaultStyles><CSS value="text-align:right"/></style></tableCell></tableCells></tableRow><tableRow><tableCells><tableCell><contents/></tableCell><tableCell><contents><textItem><dataSource><staticValue>As of:  </staticValue></dataSource></textItem><textItem><dataSource><reportExpression>ReportDate ()</reportExpression></dataSource></textItem></contents><style><CSS value="text-align:center"/><defaultStyles><defaultStyle refStyle="ts"/></defaultStyles></style></tableCell><tableCell><contents/></tableCell></tableCells></tableRow></tableRows></table></contents>
+		</block></contents></pageHeader><XMLAttributes><XMLAttribute output="no" name="RS_legacyDrillDown" value="0"/></XMLAttributes></page>
+						</reportPages>
+					<promptPages><page name="Prompt page1">
+			<pageHeader>
+				<contents>
+					<block>
+						<contents>
+							<textItem>
+								<dataSource>
+									<staticValue>Prompt Page for </staticValue>
+								</dataSource>
+								<style>
+									<defaultStyles>
+										<defaultStyle refStyle="tt"/>
+									</defaultStyles>
+								</style>
+							</textItem>
+						<table><style><defaultStyles><defaultStyle refStyle="tb"/></defaultStyles><CSS value="border-collapse:collapse;width:100%"/></style><tableRows><tableRow><tableCells><tableCell><contents/></tableCell><tableCell><contents><textItem><dataSource><reportExpression>ReportName ()</reportExpression></dataSource></textItem></contents><style><defaultStyles><defaultStyle refStyle="ta"/></defaultStyles></style></tableCell><tableCell><contents/><style><defaultStyles><defaultStyle refStyle="ts"/></defaultStyles><CSS value="text-align:right"/></style></tableCell></tableCells></tableRow><tableRow><tableCells><tableCell><contents/></tableCell><tableCell><contents><textItem><dataSource><staticValue>As of:  </staticValue></dataSource></textItem><textItem><dataSource><reportExpression>ReportDate ()</reportExpression></dataSource></textItem></contents><style><CSS value="text-align:center"/><defaultStyles><defaultStyle refStyle="ts"/></defaultStyles></style></tableCell><tableCell><contents/></tableCell></tableCells></tableRow></tableRows></table></contents>
+						<style>
+							<defaultStyles>
+								<defaultStyle refStyle="ta"/>
+							</defaultStyles>
+						</style>
+					</block>
+				</contents>
+				<style>
+					<defaultStyles>
+						<defaultStyle refStyle="hp"/>
+					</defaultStyles>
+				</style>
+			</pageHeader>
+			<pageBody>
+				<contents><block>
+			<contents><table><style><defaultStyles><defaultStyle refStyle="tb"/></defaultStyles><CSS value="border-collapse:collapse"/></style><tableRows><tableRow><tableCells><tableCell><contents><textItem><dataSource><staticValue>"Home" College</staticValue></dataSource></textItem></contents><style><defaultStyles><defaultStyle refStyle="pp"/><defaultStyle refStyle="py"/><defaultStyle refStyle="h3"/></defaultStyles></style></tableCell><tableCell><contents><selectValue parameter="p_homeCollege" required="false" selectValueUI="listBox"><selectOptions><selectOption useValue="BC"><displayValue>Bakersfield College</displayValue></selectOption><selectOption useValue="CC"><displayValue>CerroCoso</displayValue></selectOption><selectOption useValue="PC"><displayValue>Porterville College</displayValue></selectOption></selectOptions></selectValue></contents></tableCell></tableCells></tableRow><tableRow><tableCells><tableCell><contents><textItem><dataSource><staticValue>Faculty ID</staticValue></dataSource></textItem></contents><style><defaultStyles><defaultStyle refStyle="pp"/><defaultStyle refStyle="py"/><defaultStyle refStyle="h3"/></defaultStyles></style></tableCell><tableCell><contents><textBox parameter="p_ID" required="false"/></contents></tableCell></tableCells></tableRow><tableRow><tableCells><tableCell><contents><textItem><dataSource><staticValue>(optional)</staticValue></dataSource></textItem></contents></tableCell><tableCell><contents/></tableCell></tableCells></tableRow><tableRow><tableCells><tableCell><contents/></tableCell><tableCell><contents><promptButton type="finish">
+			<contents/>
+			<style>
+				<defaultStyles>
+					<defaultStyle refStyle="bp"/>
+				</defaultStyles>
+			</style>
+		</promptButton></contents></tableCell></tableCells></tableRow></tableRows></table></contents>
+		<style><CSS value="text-align:center"/></style></block></contents>
+				<style>
+					<defaultStyles>
+						<defaultStyle refStyle="py"/>
+					</defaultStyles>
+				</style>
+			</pageBody>
+			<pageFooter>
+				<contents>
+					<promptButton type="cancel">
+						<contents/>
+						<style>
+							<defaultStyles>
+								<defaultStyle refStyle="bp"/>
+							</defaultStyles>
+						</style>
+					</promptButton>
+					<promptButton type="back">
+						<contents/>
+						<style>
+							<defaultStyles>
+								<defaultStyle refStyle="bp"/>
+							</defaultStyles>
+						</style>
+					</promptButton>
+					<promptButton type="next">
+						<contents/>
+						<style>
+							<defaultStyles>
+								<defaultStyle refStyle="bp"/>
+							</defaultStyles>
+						</style>
+					</promptButton>
+					<promptButton type="finish">
+						<contents/>
+						<style>
+							<defaultStyles>
+								<defaultStyle refStyle="bp"/>
+							</defaultStyles>
+						</style>
+					</promptButton>
+				</contents>
+				<style>
+					<defaultStyles>
+						<defaultStyle refStyle="fp"/>
+					</defaultStyles>
+				</style>
+			</pageFooter>
+			<style>
+				<defaultStyles>
+					<defaultStyle refStyle="pp"/>
+				</defaultStyles>
+			</style>
+		</page>
+		</promptPages>
+		</layout>
+		</layouts>
+			<queries>
+			<query name="qry_bankload_hdr">
+			<source>
+				
+			<sqlQuery name="SQL1" dataSource="ODSMGR_CUST">
+			<sqlText>SELECT DISTINCT SIRNIST_COLL_CODE,
+                    ID, pap.person_uid,
+                    pap.LAST_NAME ,
+	            pap.FIRST_NAME,
+	            pap.MIDDLE_NAME,
+	            pap.FULL_NAME_LFMI,
+--	            SIRNIST_PIDM INST_PIDM, 
+--	            SIRDPCL_COLL_CODE,
+--		    SUBSTR(F_GET_DESC_FNC('STVCOLL',SIRDPCL_COLL_CODE,30),1,23),
+		    banked, used, cleanup1,cleanup2 ,
+		    HOME_IND, PERC
+--		    , SIRDPCL_ROWID
+      FROM 
+           ODSMGR.PERSON_DETAIL pap,
+             (SELECT  SIRNIST_PIDM ,SIRNIST_COLL_CODE,
+           sum( case when SIRNIST_NIST_CODE = 'BKLD' then 
+                SIRNIST_NIST_WORKLOAD end) banked,
+           sum( case when SIRNIST_NIST_CODE = 'LBLV' then 
+                SIRNIST_NIST_WORKLOAD end) USED ,
+           sum( case when SIRNIST_NIST_CODE = 'C+UP' then 
+                SIRNIST_NIST_WORKLOAD end) Cleanup1,
+           sum( case when SIRNIST_NIST_CODE = 'C-UP' then 
+                SIRNIST_NIST_WORKLOAD end) Cleanup2
+      FROM
+           saturn.SIRNIST@prod.kccd.edu  
+    WHERE SIRNIST_TERM_CODE  BETWEEN '200330' AND '999999'
+      GROUP BY SIRNIST_PIDM, SIRNIST_COLL_CODE
+      having sum( case when SIRNIST_NIST_CODE in ( 'BKLD','LBLV', 'C+UP','C-UP') then SIRNIST_NIST_WORKLOAD end ) &gt; 0  ) 
+      , (SELECT SIRDPCL_PIDM, SIRDPCL_COLL_CODE, NVL(SIRDPCL_HOME_IND,'N') HOME_IND,
+                NVL(SIRDPCL_PERCENTAGE,0) perc,
+                ROWID  SIRDPCL_ROWID
+           FROM SIRDPCL a
+          WHERE  SIRDPCL_TERM_CODE_EFF =
+                  (SELECT MAX(SIRDPCL_TERM_CODE_EFF)
+                     FROM SIRDPCL
+                    WHERE SIRDPCL_PIDM = a.SIRDPCL_PIDM
+                      AND SIRDPCL_TERM_CODE_EFF &lt;= '999999' )
+          ORDER BY NVL(SIRDPCL_HOME_IND,'N') DESC,
+                   NVL(SIRDPCL_PERCENTAGE,0) DESC)
+     WHERE SIRDPCL_PIDM = SIRNIST_PIDM
+     and SIRDPCL_COLL_CODE =  SIRNIST_COLL_CODE
+       and pap.PERSON_UID = SIRNIST_PIDM
+     ORDER BY SIRNIST_COLL_CODE,
+	      pap.LAST_NAME ,
+	            pap.FIRST_NAME,
+	            pap.MIDDLE_NAME</sqlText>
+		<mdProjectedItems>
+		<mdProjectedItem name="SIRNIST_COLL_CODE"/>
+		<mdProjectedItem name="ID"/>
+		<mdProjectedItem name="PERSON_UID"/>
+		<mdProjectedItem name="LAST_NAME"/>
+		<mdProjectedItem name="FIRST_NAME"/>
+		<mdProjectedItem name="MIDDLE_NAME"/>
+		<mdProjectedItem name="FULL_NAME_LFMI"/>
+		<mdProjectedItem name="BANKED"/>
+		<mdProjectedItem name="USED"/>
+		<mdProjectedItem name="CLEANUP1"/>
+		<mdProjectedItem name="CLEANUP2"/>
+		<mdProjectedItem name="HOME_IND"/>
+		<mdProjectedItem name="PERC"/>
+		</mdProjectedItems>
+		</sqlQuery>
+		</source>
+			<selection>
+			<dataItem name="ID">
+			<expression>[SQL1].[ID]</expression>
+			</dataItem>
+			<dataItem name="LAST_NAME">
+			<expression>[SQL1].[LAST_NAME]</expression>
+			</dataItem>
+			<dataItem name="FIRST_NAME">
+			<expression>[SQL1].[FIRST_NAME]</expression>
+			</dataItem>
+			<dataItem name="MIDDLE_NAME">
+			<expression>[SQL1].[MIDDLE_NAME]</expression>
+			</dataItem>
+			<dataItem name="FULL_NAME_LFMI">
+			<expression>[SQL1].[FULL_NAME_LFMI]</expression>
+			</dataItem>
+			</selection>
+		<detailFilters>
+		<detailFilter>
+		<filterExpression>[LAST_NAME]  like 'R%'</filterExpression>
+		</detailFilter>
+		</detailFilters>
+
+		</query>
+
+
+		<query name="Query1">
+			<source>
+				
+			<sqlQuery name="SQL3" dataSource="ODSMGR_CUST">
+			<sqlText>
+			SELECT DISTINCT NVL(SIRNIST_COLL_CODE,CollegeCode) college,
+                    ID, pap.PERSON_UID,
+                    pap.LAST_NAME ,
+	            pap.FIRST_NAME,
+	            pap.MIDDLE_NAME,
+	            pap.FULL_NAME_LFMI,
+	            NVL(SIRNIST_TERM_CODE ,SIRASGN_TERM_CODE) TERM,
+--	            SIRNIST_PIDM INST_PIDM, 
+--	            SIRDPCL_COLL_CODE,
+--		    SUBSTR(F_GET_DESC_FNC('STVCOLL',SIRDPCL_COLL_CODE,30),1,23),
+		    NVL(banked,0) + NVL(LOAD_BANKED ,0) banked_combined , used,
+		    HOME_IND, PERC
+--		    , SIRDPCL_ROWID
+      FROM 
+         (select distinct pd.ID, pd.PERSON_UID, Pd.LAST_NAME, pd.FIRST_NAME, pd.MIDDLE_NAME, pd.FULL_NAME_LFMI from ODSMGR.PERSON_DETAIL pd JOIN ODSMGR_CUST.ACTIVE_EMPLOYEE_view ea
+            on pd.person_uid = ea.PERSON_UID)
+           pap 
+        LEFT JOIN 
+         (SELECT  SIRNIST_PIDM ,SIRNIST_COLL_CODE,SIRNIST_TERM_CODE,
+                   sum( case when SIRNIST_NIST_CODE = 'BKLD' then 
+                        SIRNIST_NIST_WORKLOAD end) banked,
+                   sum( case when SIRNIST_NIST_CODE = 'LBLV' then 
+                        SIRNIST_NIST_WORKLOAD end) USED ,
+                   sum( case when SIRNIST_NIST_CODE = 'C+UP' then 
+                        SIRNIST_NIST_WORKLOAD end) Cleanup1,
+                   sum( case when SIRNIST_NIST_CODE = 'C-UP' then 
+                        SIRNIST_NIST_WORKLOAD end) Cleanup2
+              FROM
+                   saturn.SIRNIST@prod.kccd.edu  
+            WHERE SIRNIST_TERM_CODE  BETWEEN '200330' AND '999999'
+              GROUP BY SIRNIST_PIDM, SIRNIST_COLL_CODE,SIRNIST_TERM_CODE
+              having sum( case when SIRNIST_NIST_CODE in ( 'BKLD','LBLV', 'C+UP','C-UP') then SIRNIST_NIST_WORKLOAD end ) &gt; 0  )  NIST
+          ON PAP.person_uid = NIST.SIRNIST_PIDM 
+         JOIN
+         (SELECT SIRDPCL_PIDM, SIRDPCL_COLL_CODE, NVL(SIRDPCL_HOME_IND,'N') HOME_IND,
+                NVL(SIRDPCL_PERCENTAGE,0) perc,
+                ROWID  SIRDPCL_ROWID
+           FROM SIRDPCL a
+          WHERE  SIRDPCL_TERM_CODE_EFF =
+                  (SELECT MAX(SIRDPCL_TERM_CODE_EFF)
+                     FROM SIRDPCL
+                    WHERE SIRDPCL_PIDM = a.SIRDPCL_PIDM
+                      AND SIRDPCL_TERM_CODE_EFF &lt;= '999999' )
+          ORDER BY NVL(SIRDPCL_HOME_IND,'N') DESC,
+                   NVL(SIRDPCL_PERCENTAGE,0) DESC) 
+          ON  SIRDPCL_PIDM = SIRNIST_PIDM
+             and SIRDPCL_COLL_CODE =  SIRNIST_COLL_CODE
+             and pap.PERSON_UID = SIRNIST_PIDM 
+        LEFT JOIN (  SELECT ai.SIRASGN_FCNT_CODE,
+                    ai.SIRASGN_PIDM,
+                    substr(ss.SSBSECT_CAMP_CODE,1,1) || 'C' CollegeCode,
+                    ai.SIRASGN_TERM_CODE,
+                     MAX(ss.SSBSECT_CRSE_TITLE),
+                    SUM(ai.SIRASGN_WORKLOAD_ADJUST / ai.SIRASGN_PERCENT_RESPONSE   ) * 100 as "LOAD_BANKED"
+              FROM SATURN.SIRASGN  ai
+                   JOIN SATURN.SSBSECT ss ON ai.SIRASGN_CRN = ss.SSBSECT_CRN AND ai.SIRASGN_TERM_CODE = ss.SSBSECT_TERM_CODE
+             WHERE ai.SIRASGN_FCNT_CODE = 'B'
+             group by ai.SIRASGN_FCNT_CODE,
+                   ai.SIRASGN_PIDM,
+                   ai.SIRASGN_TERM_CODE,
+                   ss.SSBSECT_CAMP_CODE  ) ASGN
+        ON pap.PERSON_UID  = ASGN.SIRASGN_PIDM  AND SIRNIST_TERM_CODE =SIRASGN_TERM_CODE
+     ORDER BY NVL(SIRNIST_COLL_CODE,CollegeCode),
+	      pap.LAST_NAME ,
+	            pap.FIRST_NAME,
+	            pap.MIDDLE_NAME,
+	            NVL(SIRNIST_TERM_CODE ,SIRASGN_TERM_CODE)
+	</sqlText>
+		<mdProjectedItems>
+		<mdProjectedItem name="COLLEGE"/>
+		<mdProjectedItem name="ID"/>
+		<mdProjectedItem name="PERSON_UID"/>
+		<mdProjectedItem name="LAST_NAME"/>
+		<mdProjectedItem name="FIRST_NAME"/>
+		<mdProjectedItem name="MIDDLE_NAME"/>
+		<mdProjectedItem name="FULL_NAME_LFMI"/>
+		<mdProjectedItem name="TERM"/>
+		<mdProjectedItem name="BANKED_COMBINED"/>
+		<mdProjectedItem name="USED"/>
+		<mdProjectedItem name="HOME_IND"/>
+		<mdProjectedItem name="PERC"/>
+		</mdProjectedItems>
+		</sqlQuery>
+		</source>
+			<selection>
+			<dataItemListSummary aggregateMethod="total" name="Total(BANKED_COMBINED)" refDataItem="BANKED_COMBINED">
+			<XMLAttributes>
+			<XMLAttribute name="RS_dataType" output="no" value="9"/>
+			</XMLAttributes>
+			</dataItemListSummary>
+			<dataItemListSummary aggregateMethod="total" name="Total(USED)" refDataItem="Used">
+			<XMLAttributes>
+			<XMLAttribute name="RS_dataType" output="no" value="9"/>
+			</XMLAttributes>
+			</dataItemListSummary>
+			<dataItemListSummary aggregateMethod="total" name="Total(BANKED_COMBINED)1" refDataItem="BANKED_COMBINED">
+			<XMLAttributes>
+			<XMLAttribute name="RS_dataType" output="no" value="9"/>
+			</XMLAttributes>
+			</dataItemListSummary>
+			<dataItemListSummary aggregateMethod="total" name="Total(USED)1" refDataItem="Used">
+			<XMLAttributes>
+			<XMLAttribute name="RS_dataType" output="no" value="9"/>
+			</XMLAttributes>
+			</dataItemListSummary>
+			<dataItem name="COLLEGE">
+			<expression>[SQL3].[COLLEGE]</expression>
+			<XMLAttributes>
+			<XMLAttribute output="no" name="RS_dataType" value="3"/>
+			<XMLAttribute output="no" name="RS_dataUsage" value=""/>
+			</XMLAttributes>
+			</dataItem>
+			<dataItem name="ID">
+			<expression>[SQL3].[ID]</expression>
+			<XMLAttributes>
+			<XMLAttribute output="no" name="RS_dataType" value="3"/>
+			<XMLAttribute output="no" name="RS_dataUsage" value=""/>
+			</XMLAttributes>
+			</dataItem>
+			<dataItem name="PERSON_UID">
+			<expression>[SQL3].[PERSON_UID]</expression>
+			<XMLAttributes>
+			<XMLAttribute output="no" name="RS_dataType" value="9"/>
+			<XMLAttribute output="no" name="RS_dataUsage" value=""/>
+			</XMLAttributes>
+			</dataItem>
+			<dataItem name="LAST_NAME">
+			<expression>[SQL3].[LAST_NAME]</expression>
+			</dataItem>
+			<dataItem name="FIRST_NAME">
+			<expression>[SQL3].[FIRST_NAME]</expression>
+			</dataItem>
+			<dataItem name="MIDDLE_NAME">
+			<expression>[SQL3].[MIDDLE_NAME]</expression>
+			</dataItem>
+			<dataItem name="FULL_NAME_LFMI">
+			<expression>[SQL3].[FULL_NAME_LFMI]</expression>
+			<XMLAttributes>
+			<XMLAttribute output="no" name="RS_dataType" value="3"/>
+			<XMLAttribute output="no" name="RS_dataUsage" value=""/>
+			</XMLAttributes>
+			</dataItem>
+			<dataItem name="TERM" label="Term">
+			<expression>[SQL3].[TERM]</expression>
+			<XMLAttributes>
+			<XMLAttribute output="no" name="RS_dataType" value="3"/>
+			<XMLAttribute output="no" name="RS_dataUsage" value=""/>
+			</XMLAttributes>
+			</dataItem>
+			<dataItem name="BANKED_COMBINED" label="Banked Combined">
+			<expression>[SQL3].[BANKED_COMBINED]</expression>
+			<XMLAttributes>
+			<XMLAttribute output="no" name="RS_dataType" value="9"/>
+			<XMLAttribute output="no" name="RS_dataUsage" value=""/>
+			</XMLAttributes>
+			</dataItem>
+			<dataItem name="Used">
+			<expression>[SQL3].[USED]</expression>
+			<XMLAttributes>
+			<XMLAttribute output="no" name="RS_dataType" value="9"/>
+			<XMLAttribute output="no" name="RS_dataUsage" value=""/>
+			</XMLAttributes>
+			</dataItem>
+			<dataItem name="HOME_IND" label="Home Ind">
+			<expression>[SQL3].[HOME_IND]</expression>
+			<XMLAttributes>
+			<XMLAttribute output="no" name="RS_dataType" value="3"/>
+			<XMLAttribute output="no" name="RS_dataUsage" value=""/>
+			</XMLAttributes>
+			</dataItem>
+			<dataItem name="PERC" label="%">
+			<expression>[SQL3].[PERC]</expression>
+			<XMLAttributes>
+			<XMLAttribute output="no" name="RS_dataType" value="9"/>
+			<XMLAttribute output="no" name="RS_dataUsage" value=""/>
+			</XMLAttributes>
+			</dataItem>
+			</selection>
+
+		</query><query name="Query2">
+			<source>
+				
+			<sqlQuery name="SQL4" dataSource="ODSMGR_CUST">
+			<sqlText>   SELECT DISTINCT NVL(SIRNIST_COLL_CODE,CollegeCode) college,
+                    ID, pap.PERSON_UID,
+                    pap.LAST_NAME ,
+	            pap.FIRST_NAME,
+	            pap.MIDDLE_NAME,
+	            pap.FULL_NAME_LFMI,
+--	            NVL(SIRNIST_TERM_CODE ,SIRASGN_TERM_CODE) TERM,
+--	            SIRNIST_PIDM INST_PIDM, 
+--	            SIRDPCL_COLL_CODE,
+--		    SUBSTR(F_GET_DESC_FNC('STVCOLL',SIRDPCL_COLL_CODE,30),1,23),
+		    SUM(NVL(banked,0) + NVL(LOAD_BANKED ,0)) "BANKED_LOAD"  , SUM(NVL( used,0)) "USED_LOAD" , 
+		    SUM(NVL(banked,0) + NVL(LOAD_BANKED ,0)) - SUM(NVL( used,0)) "Balance"   --,
+--		    HOME_IND, PERC
+--		    , SIRDPCL_ROWID
+      FROM 
+         (select distinct pd.ID, pd.PERSON_UID, Pd.LAST_NAME, pd.FIRST_NAME, pd.MIDDLE_NAME, pd.FULL_NAME_LFMI from ODSMGR.PERSON_DETAIL pd JOIN ODSMGR_CUST.ACTIVE_EMPLOYEE_view ea
+            on pd.person_uid = ea.PERSON_UID)
+           pap 
+        LEFT JOIN 
+         (SELECT  SIRNIST_PIDM ,SIRNIST_COLL_CODE,SIRNIST_TERM_CODE,
+                   sum( case when SIRNIST_NIST_CODE = 'BKLD' then 
+                        SIRNIST_NIST_WORKLOAD end) banked,
+                   sum( case when SIRNIST_NIST_CODE = 'LBLV' then 
+                        SIRNIST_NIST_WORKLOAD end) USED ,
+                   sum( case when SIRNIST_NIST_CODE = 'C+UP' then 
+                        SIRNIST_NIST_WORKLOAD end) Cleanup1,
+                   sum( case when SIRNIST_NIST_CODE = 'C-UP' then 
+                        SIRNIST_NIST_WORKLOAD end) Cleanup2
+              FROM
+                   saturn.SIRNIST@prod.kccd.edu  
+            WHERE SIRNIST_TERM_CODE  BETWEEN '200330' AND '999999'
+              GROUP BY SIRNIST_PIDM, SIRNIST_COLL_CODE,SIRNIST_TERM_CODE
+              having sum( case when SIRNIST_NIST_CODE in ( 'BKLD','LBLV', 'C+UP','C-UP') then SIRNIST_NIST_WORKLOAD end ) &gt; 0  )  NIST
+          ON PAP.person_uid = NIST.SIRNIST_PIDM 
+         JOIN
+         (SELECT SIRDPCL_PIDM, SIRDPCL_COLL_CODE, NVL(SIRDPCL_HOME_IND,'N') HOME_IND,
+                NVL(SIRDPCL_PERCENTAGE,0) perc,
+                ROWID  SIRDPCL_ROWID
+           FROM SIRDPCL a
+          WHERE  SIRDPCL_TERM_CODE_EFF =
+                  (SELECT MAX(SIRDPCL_TERM_CODE_EFF)
+                     FROM SIRDPCL
+                    WHERE SIRDPCL_PIDM = a.SIRDPCL_PIDM
+                      AND SIRDPCL_TERM_CODE_EFF &lt;= '999999' )
+          ORDER BY NVL(SIRDPCL_HOME_IND,'N') DESC,
+                   NVL(SIRDPCL_PERCENTAGE,0) DESC) 
+          ON  SIRDPCL_PIDM = SIRNIST_PIDM
+             and SIRDPCL_COLL_CODE =  SIRNIST_COLL_CODE
+             and pap.PERSON_UID = SIRNIST_PIDM 
+        LEFT JOIN (  SELECT ai.SIRASGN_FCNT_CODE,
+                    ai.SIRASGN_PIDM,
+                    substr(ss.SSBSECT_CAMP_CODE,1,1) || 'C' CollegeCode,
+                    ai.SIRASGN_TERM_CODE,
+                     MAX(ss.SSBSECT_CRSE_TITLE),
+                    SUM(ai.SIRASGN_WORKLOAD_ADJUST / ai.SIRASGN_PERCENT_RESPONSE   ) * 100 as "LOAD_BANKED"
+              FROM SATURN.SIRASGN  ai
+                   JOIN SATURN.SSBSECT ss ON ai.SIRASGN_CRN = ss.SSBSECT_CRN AND ai.SIRASGN_TERM_CODE = ss.SSBSECT_TERM_CODE
+             WHERE ai.SIRASGN_FCNT_CODE = 'B'
+             group by ai.SIRASGN_FCNT_CODE,
+                   ai.SIRASGN_PIDM,
+                   ai.SIRASGN_TERM_CODE,
+                   ss.SSBSECT_CAMP_CODE  ) ASGN
+        ON pap.PERSON_UID  = ASGN.SIRASGN_PIDM  AND SIRNIST_TERM_CODE =SIRASGN_TERM_CODE
+   GROUP BY NVL(SIRNIST_COLL_CODE,CollegeCode) ,
+                    ID, pap.PERSON_UID,
+                    pap.LAST_NAME ,
+	            pap.FIRST_NAME,
+	            pap.MIDDLE_NAME,
+	            pap.FULL_NAME_LFMI
+     ORDER BY 
+	      pap.LAST_NAME ,
+	            pap.FIRST_NAME,
+	            pap.MIDDLE_NAME
+</sqlText>
+		<mdProjectedItems>
+		<mdProjectedItem name="COLLEGE"/>
+		<mdProjectedItem name="ID"/>
+		<mdProjectedItem name="PERSON_UID"/>
+		<mdProjectedItem name="LAST_NAME"/>
+		<mdProjectedItem name="FIRST_NAME"/>
+		<mdProjectedItem name="MIDDLE_NAME"/>
+		<mdProjectedItem name="FULL_NAME_LFMI"/>
+		<mdProjectedItem name="BANKED_LOAD"/>
+		<mdProjectedItem name="USED_LOAD"/>
+		<mdProjectedItem name="Balance"/>
+		</mdProjectedItems>
+		</sqlQuery>
+		</source>
+			<selection>
+			<dataItem name="College">
+			<expression>[SQL4].[COLLEGE]</expression>
+			<XMLAttributes>
+			<XMLAttribute output="no" name="RS_dataType" value="3"/>
+			<XMLAttribute output="no" name="RS_dataUsage" value=""/>
+			</XMLAttributes>
+			</dataItem>
+			<dataItem name="ID">
+			<expression>[SQL4].[ID]</expression>
+			<XMLAttributes>
+			<XMLAttribute output="no" name="RS_dataType" value="3"/>
+			<XMLAttribute output="no" name="RS_dataUsage" value=""/>
+			</XMLAttributes></dataItem><dataItem name="PERSON_UID">
+			<expression>[SQL4].[PERSON_UID]</expression>
+			<XMLAttributes>
+			<XMLAttribute output="no" name="RS_dataType" value="9"/>
+			<XMLAttribute output="no" name="RS_dataUsage" value=""/>
+			</XMLAttributes>
+			</dataItem>
+			<dataItem name="LAST_NAME">
+			<expression>[SQL4].[LAST_NAME]</expression>
+			</dataItem>
+			<dataItem name="FIRST_NAME">
+			<expression>[SQL4].[FIRST_NAME]</expression>
+			</dataItem>
+			<dataItem name="MIDDLE_NAME">
+			<expression>[SQL4].[MIDDLE_NAME]</expression>
+			</dataItem>
+			<dataItem name="FULL_NAME_LFMI" label="Full Name (LFMI)">
+			<expression>[SQL4].[FULL_NAME_LFMI]</expression>
+			<XMLAttributes>
+			<XMLAttribute output="no" name="RS_dataType" value="3"/>
+			<XMLAttribute output="no" name="RS_dataUsage" value=""/>
+			</XMLAttributes>
+			</dataItem>
+			<dataItem name="BANKED_LOAD" label="Load Banked">
+			<expression>[SQL4].[BANKED_LOAD]</expression>
+			<XMLAttributes>
+			<XMLAttribute output="no" name="RS_dataType" value="9"/>
+			<XMLAttribute output="no" name="RS_dataUsage" value=""/>
+			</XMLAttributes></dataItem><dataItem name="Load Used">
+			<expression>[SQL4].[USED_LOAD]</expression>
+			<XMLAttributes>
+			<XMLAttribute output="no" name="RS_dataType" value="9"/>
+			<XMLAttribute output="no" name="RS_dataUsage" value=""/>
+			</XMLAttributes>
+			</dataItem>
+			<dataItem name="Balance">
+			<expression>[SQL4].[Balance]</expression>
+			<XMLAttributes>
+			<XMLAttribute output="no" name="RS_dataType" value="9"/>
+			<XMLAttribute output="no" name="RS_dataUsage" value=""/>
+			</XMLAttributes>
+			</dataItem>
+			</selection>
+		<queryHints>
+		<autoSort value="none"/>
+		</queryHints>
+		<detailFilters>
+		<detailFilter use="optional">
+		<filterExpression>[College] LIKE ?p_homeCollege? or ?p_homeCollege? IS NULL
+</filterExpression>
+</detailFilter>
+<detailFilter use="optional">
+<filterExpression>[ID] = ?p_ID? and ?p_ID? is not null</filterExpression>
+</detailFilter>
+</detailFilters>
+</query>
+
+<query name="Summary Banked Load">
+			<source>
+				
+			<sqlQuery name="SQL2" dataSource="ODSMGR_CUST">
+			<sqlText>    SELECT DISTINCT NVL(SIRNIST_COLL_CODE,CollegeCode) college,
+                    COUNT(DISTINCT pap.PERSON_UID) Count_Instruct,
+		    SUM(NVL(banked,0) + NVL(LOAD_BANKED ,0)) "BANKED_LOAD"  , SUM(NVL( used,0)) "USED_LOAD" , 
+		    SUM(NVL(banked,0) + NVL(LOAD_BANKED ,0)) - SUM(NVL( used,0)) "Balance" 
+--		     ,
+--		    (SUM(NVL(banked,0) + NVL(LOAD_BANKED ,0)) - SUM(NVL( used,0)) )/ COUNT(DISTINCT pap.PERSON_UID) Average --,
+      FROM 
+         (select distinct pd.ID, pd.PERSON_UID, Pd.LAST_NAME, pd.FIRST_NAME, pd.MIDDLE_NAME, pd.FULL_NAME_LFMI from ODSMGR.PERSON_DETAIL pd JOIN ODSMGR_CUST.ACTIVE_EMPLOYEE_view ea
+            on pd.person_uid = ea.PERSON_UID)
+           pap 
+        LEFT JOIN 
+         (SELECT  SIRNIST_PIDM ,SIRNIST_COLL_CODE,SIRNIST_TERM_CODE,
+                   sum( case when SIRNIST_NIST_CODE = 'BKLD' then 
+                        SIRNIST_NIST_WORKLOAD end) banked,
+                   sum( case when SIRNIST_NIST_CODE = 'LBLV' then 
+                        SIRNIST_NIST_WORKLOAD end) USED ,
+                   sum( case when SIRNIST_NIST_CODE = 'C+UP' then 
+                        SIRNIST_NIST_WORKLOAD end) Cleanup1,
+                   sum( case when SIRNIST_NIST_CODE = 'C-UP' then 
+                        SIRNIST_NIST_WORKLOAD end) Cleanup2
+              FROM
+                   saturn.SIRNIST@prod.kccd.edu  
+            WHERE SIRNIST_TERM_CODE  BETWEEN '200330' AND '999999'
+              GROUP BY SIRNIST_PIDM, SIRNIST_COLL_CODE,SIRNIST_TERM_CODE
+              having sum( case when SIRNIST_NIST_CODE in ( 'BKLD','LBLV', 'C+UP','C-UP') then SIRNIST_NIST_WORKLOAD end ) &gt; 0  )  NIST
+          ON PAP.person_uid = NIST.SIRNIST_PIDM 
+         JOIN
+         (SELECT SIRDPCL_PIDM, SIRDPCL_COLL_CODE, NVL(SIRDPCL_HOME_IND,'N') HOME_IND,
+                NVL(SIRDPCL_PERCENTAGE,0) perc,
+                ROWID  SIRDPCL_ROWID
+           FROM SIRDPCL a
+          WHERE  SIRDPCL_TERM_CODE_EFF =
+                  (SELECT MAX(SIRDPCL_TERM_CODE_EFF)
+                     FROM SIRDPCL
+                    WHERE SIRDPCL_PIDM = a.SIRDPCL_PIDM
+                      AND SIRDPCL_TERM_CODE_EFF &lt;= '999999' )
+          ORDER BY NVL(SIRDPCL_HOME_IND,'N') DESC,
+                   NVL(SIRDPCL_PERCENTAGE,0) DESC) 
+          ON  SIRDPCL_PIDM = SIRNIST_PIDM
+             and SIRDPCL_COLL_CODE =  SIRNIST_COLL_CODE
+             and pap.PERSON_UID = SIRNIST_PIDM 
+        LEFT JOIN (  SELECT ai.SIRASGN_FCNT_CODE,
+                    ai.SIRASGN_PIDM,
+                    substr(ss.SSBSECT_CAMP_CODE,1,1) || 'C' CollegeCode,
+                    ai.SIRASGN_TERM_CODE,
+                     MAX(ss.SSBSECT_CRSE_TITLE),
+                    SUM(ai.SIRASGN_WORKLOAD_ADJUST / ai.SIRASGN_PERCENT_RESPONSE   ) * 100 as "LOAD_BANKED"
+              FROM SATURN.SIRASGN  ai
+                   JOIN SATURN.SSBSECT ss ON ai.SIRASGN_CRN = ss.SSBSECT_CRN AND ai.SIRASGN_TERM_CODE = ss.SSBSECT_TERM_CODE
+             WHERE ai.SIRASGN_FCNT_CODE = 'B'
+             group by ai.SIRASGN_FCNT_CODE,
+                   ai.SIRASGN_PIDM,
+                   ai.SIRASGN_TERM_CODE,
+                   ss.SSBSECT_CAMP_CODE  ) ASGN
+        ON pap.PERSON_UID  = ASGN.SIRASGN_PIDM  AND SIRNIST_TERM_CODE =SIRASGN_TERM_CODE
+   GROUP BY NVL(SIRNIST_COLL_CODE,CollegeCode) 
+</sqlText>
+		<mdProjectedItems>
+		<mdProjectedItem name="COLLEGE"/>
+		<mdProjectedItem name="COUNT_INSTRUCT"/>
+		<mdProjectedItem name="BANKED_LOAD"/>
+		<mdProjectedItem name="USED_LOAD"/>
+		<mdProjectedItem name="Balance"/>
+		</mdProjectedItems>
+		</sqlQuery>
+		</source>
+			<selection>
+			<dataItem name="COLLEGE" label="College">
+			<expression>[SQL2].[COLLEGE]</expression>
+			<XMLAttributes>
+			<XMLAttribute output="no" name="RS_dataType" value="3"/>
+			<XMLAttribute output="no" name="RS_dataUsage" value=""/>
+			</XMLAttributes>
+			</dataItem>
+			<dataItem name="COUNT_INSTRUCT" label="Distinct Instructor Count">
+			<expression>[SQL2].[COUNT_INSTRUCT]</expression>
+			<XMLAttributes>
+			<XMLAttribute output="no" name="RS_dataType" value="9"/>
+			<XMLAttribute output="no" name="RS_dataUsage" value=""/>
+			</XMLAttributes>
+			</dataItem>
+			<dataItem name="BANKED_LOAD" label="Banked Load">
+			<expression>[SQL2].[BANKED_LOAD]</expression>
+			<XMLAttributes>
+			<XMLAttribute output="no" name="RS_dataType" value="9"/>
+			<XMLAttribute output="no" name="RS_dataUsage" value=""/>
+			</XMLAttributes>
+			</dataItem>
+			<dataItem name="USED_LOAD" label="Used">
+			<expression>[SQL2].[USED_LOAD]</expression>
+			<XMLAttributes>
+			<XMLAttribute output="no" name="RS_dataType" value="9"/>
+			<XMLAttribute output="no" name="RS_dataUsage" value=""/>
+			</XMLAttributes>
+			</dataItem>
+			<dataItem name="Balance">
+			<expression>[SQL2].[Balance]</expression>
+			<XMLAttributes>
+			<XMLAttribute output="no" name="RS_dataType" value="9"/>
+			<XMLAttribute output="no" name="RS_dataUsage" value=""/>
+			</XMLAttributes>
+			</dataItem>
+			</selection>
+		<detailFilters>
+		<detailFilter use="optional">
+		<filterExpression>[COLLEGE] = ?p_homeCollege?</filterExpression>
+		</detailFilter>
+		</detailFilters>
+		</query></queries>
+		<XMLAttributes>
+		<XMLAttribute output="no" name="RS_CreateExtendedDataItems" value="true"/>
+		<XMLAttribute output="no" name="listSeparator" value=","/>
+		<XMLAttribute output="no" name="decimalSeparator" value="."/>
+		<XMLAttribute output="no" name="RS_modelModificationTime" value="2017-05-31T16:54:52.058Z"/>
+		</XMLAttributes>
+		<classStyles>
+		<classStyle name="GuidedLayoutLeftPadding">
+		<CSS value="padding-left:5px;border-top-width:1px;border-bottom-width:1px;border-left-width:1px;border-right-width:1px"/>
+		</classStyle>
+		<classStyle name="GuidedLayoutTopPadding">
+		<CSS value="padding-top:5px;border-top-width:1px;border-bottom-width:1px;border-left-width:1px;border-right-width:1px"/>
+		</classStyle>
+		<classStyle name="GuidedLayoutRightPadding">
+		<CSS value="padding-right:5px;border-top-width:1px;border-bottom-width:1px;border-left-width:1px;border-right-width:1px"/>
+		</classStyle>
+		<classStyle name="GuidedLayoutBottomPadding">
+		<CSS value="padding-bottom:5px;border-top-width:1px;border-bottom-width:1px;border-left-width:1px;border-right-width:1px"/>
+		</classStyle>
+		<classStyle name="GuidedLayoutMargin">
+		<CSS value="margin-bottom:10px"/>
+		</classStyle>
+		</classStyles>
+		<modelPath>/content/folder[@name='KCCD Custom Packages']/package[@name='HR Active Jobs']/model[@name='2017-05-31T16:54:52.038Z']</modelPath><reportName>Faculty Banked Load</reportName></report>
